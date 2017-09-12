@@ -1,0 +1,29 @@
+1]
+            // Set cross-platform Java L&F (also called "Metal")
+        UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+ 2]
+            // Set System L&F
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+3]
+UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+
+4]
+UIManager.setLookAndFeel("com.sun.swing.plaf.motif.MotifLookAndFeel");
+
+5]
+for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) 
+{
+	System.out.println(info.getName());
+	/*if ("Nimbus".equals(info.getName())) 
+	{
+		javax.swing.UIManager.setLookAndFeel(info.getClassName());
+        break;
+	}*/
+}
+
+Name and ClassNames
+Metal : javax.swing.plaf.metal.MetalLookAndFeel
+Nimbus : javax.swing.plaf.nimbus.NimbusLookAndFeel
+CDE/Motif : com.sun.java.swing.plaf.motif.MotifLookAndFeel
+Windows : com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+Windows Classic : com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel
