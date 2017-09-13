@@ -100,7 +100,7 @@ class clientEx extends JFrame implements ActionListener
 		try
 		{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","prem");
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","mymotog2O");
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery("select * from keys");
 			while(rs.next())

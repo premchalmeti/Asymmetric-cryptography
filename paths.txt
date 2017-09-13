@@ -1,7 +1,7 @@
 classpath :
 
-C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar;C:\Program Files\Java\jdk1.7.0_09\bin;C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\servlet-api.jar;.
+C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar;
 
 system path :
 
-C:\oraclexe\app\oracle\product\10.2.0\server\bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;C:\Program Files\Java\jdk1.7.0_09\bin;
+C:\oraclexe\app\oracle\product\10.2.0\server\bin;

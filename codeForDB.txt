@@ -1,4 +1,4 @@
-create table usign : 
+--create table usign : */
 
 CREATE TABLE  Usign 
    (	FNAME VARCHAR2(20), 
@@ -13,7 +13,7 @@ CREATE TABLE  Usign
 	 PRIMARY KEY (LID) ENABLE
    )
 
-creates table keys :
+--creates table keys :
 
 CREATE TABLE  keys
    (	LID VARCHAR2(20), 

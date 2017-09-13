@@ -87,7 +87,7 @@ class send extends JPanel implements ActionListener
 		try
 		{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@"+sname+":1521:XE","prem","rex");
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@"+sname+":1521:XE","system","mymotog2O");
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery("select * from keys");
 			while(rs.next())
@@ -373,7 +373,7 @@ class info extends JPanel implements ActionListener
 		try
 		{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@"+sname+":1521:XE","prem","rex");
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@"+sname+":1521:XE","system","mymotog2O");
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery("select * from Usign");
 			while(rs.next())
@@ -455,7 +455,7 @@ class keys extends JPanel
 			t1.setEditable(false);t2.setEditable(false);t3.setEditable(false);
 			t4.setEditable(false);
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@"+sname+":1521:XE","prem","rex");
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@"+sname+":1521:XE","system","mymotog2O");
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery("select * from keys");
 			while(rs.next())

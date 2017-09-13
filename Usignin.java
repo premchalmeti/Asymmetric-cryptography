@@ -270,7 +270,7 @@ public class Usignin extends JFrame implements ActionListener
 				}
 				else
 				{
-					con = DriverManager.getConnection("jdbc:oracle:thin:@"+sname+":1521:XE","prem","rex");
+					con = DriverManager.getConnection("jdbc:oracle:thin:@"+sname+":1521:XE","system","mymotog2O");
 					st = con.createStatement();
 					fnm = fnametxt.getText();
 					mnm = mnametxt.getText();

@@ -152,7 +152,7 @@ public class UPortal extends JFrame implements ActionListener,ItemListener
 					lname = utxt.getText();
 					pwd = pwdtxt.getText();
 					Class.forName("oracle.jdbc.driver.OracleDriver");
-					Connection con = DriverManager.getConnection("jdbc:oracle:thin:@"+addr+":1521:XE","prem","rex");
+					Connection con = DriverManager.getConnection("jdbc:oracle:thin:@"+addr+":1521:XE","system","mymotog2O");
 					Statement st=con.createStatement();
 					ResultSet rs = st.executeQuery("select * from Usign");
 					while(rs.next())
@@ -197,7 +197,7 @@ public class UPortal extends JFrame implements ActionListener,ItemListener
 					lname = utxt.getText();
 					pwd = pwdtxt.getText();
 					Class.forName("oracle.jdbc.driver.OracleDriver");
-					con = DriverManager.getConnection("jdbc:oracle:thin:@"+addr+":1521:XE","prem","rex");
+					con = DriverManager.getConnection("jdbc:oracle:thin:@"+addr+":1521:XE","system","mymotog2O");
 					Statement st=con.createStatement();
 					rs = st.executeQuery("select * from Usign");
 					while(rs.next())

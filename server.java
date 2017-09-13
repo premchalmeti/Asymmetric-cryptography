@@ -22,7 +22,7 @@ public class server
 		PrintWriter pw2 = new PrintWriter(s2.getOutputStream(),true);
 		String client2 = br2.readLine();
 		Class.forName("oracle.jdbc.driver.OracleDriver");
-		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","prem");
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","mymotog2O");
 		Statement st = con.createStatement();			
 		ResultSet rs = st.executeQuery("select * from keys");
 		while(true)
